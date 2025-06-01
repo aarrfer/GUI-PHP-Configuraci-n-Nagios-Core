@@ -1,0 +1,232 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fuente y fondo general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eef1f5;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+/* Cabecera */
+h1 {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 24px;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-bottom: 4px solid #1abc9c;
+}
+
+h2 {
+    font-size: 1.6em;
+    margin: 24px 0 16px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 6px;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Formularios */
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 4px;
+    color: #34495e;
+}
+
+select, textarea, input[type="submit"] {
+    width: 100%;
+    padding: 12px 14px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+select:focus,
+textarea:focus {
+    border-color: #3498db;
+    outline: none;
+    background-color: #fff;
+}
+
+textarea {
+    height: 250px;
+    resize: vertical;
+}
+
+/* Botón submit */
+input[type="submit"] {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+    padding: 6px 10px;
+    font-size: 0.85em;
+}
+
+input[type="submit"]:hover {
+    background-color: #16a085;
+    transform: scale(1.02);
+}
+
+/* Botón de volver */
+a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+a:hover {
+    background-color: #2980b9;
+    transform: scale(1.02);
+}
+
+/* Mensajes de estado */
+p {
+    font-size: 1.1em;
+    margin-top: 15px;
+}
+
+.success {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.error, strong {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Estilo de optgroups */
+optgroup {
+    font-weight: bold;
+    background-color: #f1f1f1;
+    padding: 4px;
+}
+
+select {
+    background-color: #fefefe;
+}
+
+/* Responsividad */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    textarea {
+        height: 180px;
+    }
+
+    input[type="submit"], a {
+        font-size: 1em;
+        width: 100%;
+        text-align: center;
+    }
+}
+.button-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-bar a {
+    margin-top: 0;
+}
+.footer {
+    margin-top: 40px;
+    padding: 16px;
+    text-align: center;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    font-size: 0.95em;
+    border-top: 4px solid #1abc9c;
+    box-shadow: 0 -4px 6px rgba(0,0,0,0.1);
+}
+/* Estilo común para botones guardar y eliminar */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    min-width: 150px; /* Tamaño mínimo igual para ambos */
+    text-align: center;
+}
+
+/* Botón guardar - verde */
+input.btn {
+    background-color: #1abc9c;
+    color: white;
+}
+
+input.btn:hover {
+    background-color: #16a085;
+    transform: scale(1.02);
+}
+
+/* Botón eliminar - rojo */
+button.btn-delete {
+    background-color: #e74c3c;
+    color: white;
+}
+
+button.btn-delete:hover {
+    background-color: #c0392b;
+    transform: scale(1.02);
+}
+button.btn-save {
+    background-color: #1abc9c;
+    color: white;
+}
+
+button.btn-save:hover {
+    background-color: #16a085;
+    transform: scale(1.02);
+}
+.btn-small {
+    width: auto;
+    padding: 8px 16px;
+    font-size: 0.9em;
+    min-width: unset;
+}
